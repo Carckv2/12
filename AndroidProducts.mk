@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_spaced.mk
+    $(LOCAL_DIR)/aosp_spaced.mk
