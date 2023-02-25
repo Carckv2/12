@@ -22,22 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-POTATO_BUILD_TYPE := UNOFFICIAL
-POTATO_MAINTAINER := NINJA
-WITH_GAPPS := true
+PEX_BUILD_TYPE := UNOFFICIAL
+PEX_MAINTAINER := NINJA
+TARGET_INCLUDE_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := potato_spaced
+PRODUCT_NAME := aosp_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme 8i
+PRODUCT_MODEL := Realme Narzo 50
 PRODUCT_MANUFACTURER := realme
 
 # Build info
