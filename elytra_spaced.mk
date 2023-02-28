@@ -22,19 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/elytra/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-BOOTLEGGERS_BUILD_TYPE := UNOFFICIAL
-BOOTLEGGERS_MAINTAINER := NINJA
+ELYTRA_BUILD_TYPE := UNOFFICIAL
+ELYTRA_MAINTAINER := NINJA
 USE_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bootleg_spaced
+PRODUCT_NAME := elytra_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Narzo 50
