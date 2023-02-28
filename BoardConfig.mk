@@ -123,7 +123,7 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Prebuilt vendor configuration
-BUILD_WITHOUT_VENDOR := true
+BUILD_WITHOUT_VENDOR := false
 
 # Copy out directories
 TARGET_COPY_OUT_VENDOR := vendor
