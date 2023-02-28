@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_spaced.mk
+    $(LOCAL_DIR)/elytra_spaced.mk
