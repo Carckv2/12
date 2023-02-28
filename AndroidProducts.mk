@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/elytra_spaced.mk
+    $(LOCAL_DIR)/xdroid_spaced.mk
