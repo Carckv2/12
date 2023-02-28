@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_spaced.mk
+    $(LOCAL_DIR)/spark_spaced.mk
