@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_spaced.mk
+    $(LOCAL_DIR)/octavi_spaced.mk
