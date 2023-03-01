@@ -22,19 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_MAINTAINER := NINJA
+YAAP_BUILD_TYPE := UNOFFICIAL
+YAAP_MAINTAINER := NINJA
 WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_spaced
+PRODUCT_NAME := yaap_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RMX3151
 PRODUCT_MODEL := RMX3151
