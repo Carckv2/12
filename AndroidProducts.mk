@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_spaced.mk
+    $(LOCAL_DIR)/yaap_spaced.mk
