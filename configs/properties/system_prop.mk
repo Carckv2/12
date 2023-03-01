@@ -130,7 +130,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.soc.manufacturer=MediaTek \
     ro.soc.model=MT6781
-
-# Elixir stuff
-PRODUCT_PRODUCT_PROPERTIES += \
-    org.elixir.device=realme 8i/narzo 50
