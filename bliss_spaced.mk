@@ -22,23 +22,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-YAAP_BUILD_TYPE := UNOFFICIAL
-YAAP_MAINTAINER := NINJA
+BLISS_BUILD_TYPE := UNOFFICIAL
+BLISS_MAINTAINER := NINJA
 WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_spaced
+PRODUCT_NAME := bliss_spaced
 PRODUCT_DEVICE := spaced
-PRODUCT_BRAND := RMX3151
-PRODUCT_MODEL := RMX3151
-PRODUCT_MANUFACTURER := RMX3151
+PRODUCT_BRAND := RM6781
+PRODUCT_MODEL := RM6781
+PRODUCT_MANUFACTURER := RM6781
 
 # Build info
 BUILD_FINGERPRINT := "realme/RMX3151/RE54B4L1:11/RP1A.200720.011/1634223691782:user/release-keys"
