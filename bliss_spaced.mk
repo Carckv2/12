@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
@@ -31,10 +31,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 BLISS_BUILD_TYPE := UNOFFICIAL
 BLISS_MAINTAINER := NINJA
-WITH_GMS := true
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_spaced
+PRODUCT_NAME := lineage_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RM6781
 PRODUCT_MODEL := RM6781
