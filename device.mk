@@ -102,7 +102,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0 \
     android.hardware.audio.common@6.0-util \
     android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.audio.effect@6.0 \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.1-impl \
@@ -132,20 +131,17 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl-qti \
     libbt-vendor
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    camera.msm8953 \
 
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
@@ -154,9 +150,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    liboverlay \
     libqdMetaData.system \
-    libgenlock \
     libtinyxml
 
 # Gatekeeper
@@ -171,10 +165,7 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
-    gps.msm8953 \
     libcurl \
-    libgnss \
-    libgnsspps \
     libjson
 
 PRODUCT_COPY_FILES += \
@@ -248,7 +239,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4-service.widevine
 
 # Memory
 PRODUCT_PACKAGES += \
@@ -269,14 +259,12 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom \
     android.hardware.power@1.0-service \
     android.hardware.power@1.0-impl
 
@@ -291,7 +279,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2 \
     telephony-ext
 
@@ -315,7 +302,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
-    thermal.msm8953 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
@@ -327,12 +313,8 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     libcld80211 \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
-    macloader \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -374,6 +356,5 @@ $(call inherit-product, vendor/samsung/j8y18lte/j8y18lte-vendor.mk)
 
 # APEX
 PRODUCT_COMPRESSED_APEX := false
-
 
 
