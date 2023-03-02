@@ -152,4 +152,3 @@ PRODUCT_PACKAGES += \
 
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/spaced/spaced-vendor.mk)
-$(call inherit-product, vendor/realme/ims-spaced/mtk-ims.mk)
