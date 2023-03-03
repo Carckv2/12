@@ -22,19 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/stag/main.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-EVO_BUILD_TYPE := UNOFFICIAL
-EVO_MAINTAINER := NINJA
-EVO_WITH_GAPPS := true
+STAG_BUILD_TYPE := UNOFFICIAL
+STAG_MAINTAINER := NINJA
+STAG_WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_spaced
+PRODUCT_NAME := stag_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RM6781
 PRODUCT_MODEL := RM6781
