@@ -1,3 +1,4 @@
+<compatibility-matrix version="4.0" type="framework">
 <hal format="hidl" optional="true">
     <name>android.hardware.audio.effect</name>
     <version>6.0</version>
@@ -488,3 +489,4 @@
         <instance>default</instance>
     </interface>
 </hal>
+</compatibility-matrix>
