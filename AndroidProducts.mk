@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_spaced.mk
+    $(LOCAL_DIR)/stag_spaced.mk
