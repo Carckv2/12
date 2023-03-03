@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_spaced.mk
+    $(LOCAL_DIR)/evolution_spaced.mk
