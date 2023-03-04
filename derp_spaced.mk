@@ -29,7 +29,7 @@ IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1480
 TARGET_GAPPS_ARCH := arm64
-YAAP_BUILD_TYPE := UNOFFICIAL
+DERP_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
@@ -48,6 +48,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-# YAAP Device Maintainers
+# DERP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="NINJA"
