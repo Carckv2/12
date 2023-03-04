@@ -22,18 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-DERP_BUILD_TYPE := UNOFFICIAL
+PEX_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_spaced
+PRODUCT_NAME := aosp_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RM6781
 PRODUCT_MODEL := RM6781
