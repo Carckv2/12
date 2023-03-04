@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_spaced.mk
+    $(LOCAL_DIR)/derp_spaced.mk
