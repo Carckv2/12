@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/spaced/device.mk)
 
-# Inherit some common Evolution X stuff.
+# Inherit some common YAAP stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Build configuration
