@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_spaced.mk
+    $(LOCAL_DIR)/blaze_spaced.mk
