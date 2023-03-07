@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_spaced.mk
+    $(LOCAL_DIR)/pixys_spaced.mk
