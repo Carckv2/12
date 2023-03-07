@@ -22,18 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common YAAP stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1480
 TARGET_GAPPS_ARCH := arm64
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_GAPPS := true
+CARBON_BUILD_TYPE := UNOFFICIAL
+CARBON_GMS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := octavi_spaced
+PRODUCT_NAME := carbon_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RM6781
 PRODUCT_MODEL := RM6781
@@ -48,6 +48,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-# OCTAVI Device Maintainers
+# CARBON Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="NINJA"(@xylrand)
