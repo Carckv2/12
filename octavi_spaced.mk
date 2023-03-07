@@ -30,10 +30,10 @@ TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1480
 TARGET_GAPPS_ARCH := arm64
 OCTAVI_BUILD_TYPE := UNOFFICIAL
-WITH_GAPPS := true
+OCTAVI_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blaze_spaced
+PRODUCT_NAME := octavi_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := RM6781
 PRODUCT_MODEL := RM6781
@@ -48,6 +48,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-# DERP Device Maintainers
+# OCTAVI Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="NINJA"(@xylrand)
