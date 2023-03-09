@@ -28,7 +28,7 @@ $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1480
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 PIXYS_BUILD_TYPE := UNOFFICIAL
 
